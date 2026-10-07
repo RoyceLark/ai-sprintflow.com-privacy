@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI SprintFlow - Privacy policy</title>
+<meta name="description" content="Privacy policy of the AI SprintFlow app by HPTTech.Com.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root { --bg: #ffffff; --fg: #1f2937; --muted: #6b7280; --line: #e5e7eb; --accent: #4f46e5; --card: #f9fafb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111318; --fg: #e5e7eb; --muted: #9ca3af; --line: #2a2e37; --accent: #8b8cf6; --card: #181b22; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  header img { width: 52px; height: 52px; }
+  h1 { font-size: 1.9rem; margin: 0; line-height: 1.2; }
+  .updated { color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  td:first-child { width: 32%; font-weight: 600; }
+  a { color: var(--accent); }
+  ul { padding-left: 22px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: .9rem; }
+  @media (max-width: 560px) { td:first-child { width: auto; } th, td { padding: 8px 6px; } h1 { font-size: 1.5rem; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="logo-mark.png" alt="">
+    <h1>AI SprintFlow privacy policy</h1>
+  </header>
+  <p class="updated">Last updated: 7 October 2026</p>
+
+  <p>AI SprintFlow ("the app") is published by HPTTech.Com. This policy explains what the app does with your data.</p>
+
+  <h2>The short version</h2>
+  <p class="summary">The app runs on your computer. It sends your data only to the services <strong>you</strong> connect
+    it to (your Jira site, your code host and your AI provider), and it sends nothing to HPTTech.Com.</p>
+
+  <h2>What the app stores, and where</h2>
+  <p>On your computer, in your user profile:</p>
+  <ul>
+    <li><strong>Settings</strong> you enter, such as your Jira site, code host and AI provider.</li>
+    <li><strong>Credentials</strong> you enter (API tokens and keys). They are stored <strong>encrypted</strong> and are never shown again.</li>
+    <li><strong>Run history</strong>: for each ticket the app works on, its steps, the code changes, test results and logs.</li>
+    <li><strong>What the app has learned</strong> about your repositories, to work better on later tickets.</li>
+    <li><strong>Console user accounts</strong> you create, with passwords stored as secure hashes.</li>
+  </ul>
+  <p>This data stays on your computer. Uninstalling the app removes it.</p>
+
+  <h2>What the app sends, and to whom</h2>
+  <p>Only when you have connected the service, and only to do the work you start:</p>
+  <table>
+    <thead><tr><th>Service you connect</th><th>What is sent</th></tr></thead>
+    <tbody>
+      <tr><td>Your Jira site</td><td>Requests to read the tickets you choose and, if you allow it, comments and status updates.</td></tr>
+      <tr><td>Your code host (GitHub, GitLab, Bitbucket, Azure DevOps or another git server)</td><td>Your repository is downloaded to your computer; the app's changes are pushed to a branch and a draft pull request is opened.</td></tr>
+      <tr><td>Your AI provider (for example Anthropic Claude, Amazon Bedrock, Google Vertex AI, OpenAI, a model on your own hardware, or your own endpoint)</td><td>Ticket text and the parts of your code the app needs, so the model can plan, write and review the change. The provider's own privacy terms apply to that data.</td></tr>
+    </tbody>
+  </table>
+  <p>The app has a <strong>data guard</strong> that, when turned on, replaces personal data and secrets with placeholders
+    before anything is sent to the AI provider, and keeps files you mark as sensitive from being sent at all.</p>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>It does not send any data to HPTTech.Com.</li>
+    <li>It does not include advertising or third-party analytics.</li>
+    <li>It does not sell, rent or share your data.</li>
+    <li>License keys are checked on your computer, without contacting us.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>The app is a tool for software developers and is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published at this address with a new "Last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:mohancanarys@gmail.com">mohancanarys@gmail.com</a> or
+    <a href="mailto:say2mohan123@gmail.com">say2mohan123@gmail.com</a></p>
+
+  <footer>&copy; 2026 HPTTech.Com &middot; AI SprintFlow</footer>
+</main>
+</body>
+</html>
